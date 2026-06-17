@@ -9,19 +9,13 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
-app.get("/hello", (_req, res) => {
-  res.json({
-    message: "Hello World"
-  });
-});
-
 app.get("/folders", async (_req, res) => {
   const folders = await getAllFolders();
 
   res.json(folders);
 });
 
-app.get("/folders/tree", async (_req, res) => {
+app.get("/api/v1/folders/tree", async (_req, res) => {
   const tree = await getFolderTree();
 
   res.json(tree);

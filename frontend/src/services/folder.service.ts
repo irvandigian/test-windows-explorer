@@ -1,6 +1,6 @@
 export async function getFolderTree() {
   const response = await fetch(
-    "http://localhost:3000/folders/tree"
+    "http://localhost:3000/api/v1/folders/tree"
   );
 
   if (!response.ok) {
