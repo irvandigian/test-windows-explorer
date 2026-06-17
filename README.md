@@ -146,7 +146,7 @@ http://localhost:5173
 ### Get Folder Tree
 
 ```http
-GET /folders/tree
+GET /api/v1/folders/tree
 ```
 
 Example Response:
